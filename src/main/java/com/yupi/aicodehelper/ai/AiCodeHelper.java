@@ -20,6 +20,7 @@ public class AiCodeHelper {
         ChatResponse chatResponse = qwenChatModel.chat(userMessage);
         AiMessage aiMessage = chatResponse.aiMessage();
         log.info("AI 输出：" + aiMessage.toString());
+        log.info("AI 输出：" + aiMessage.toString());
         return aiMessage.text();
     }
 
